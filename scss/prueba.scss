@@ -1,6 +1,5 @@
-
-
 $primary: #000000;
+$primarylig: lighten($primary, 10);
 $secondary: #FFFFFF;
 $terciary: #FC47FC;
 $font-size:1rem;
@@ -233,8 +232,9 @@ body {
 	font-size: ($margin *3)/2;
     margin-top: $margin * 5;
     &:hover {
-    background-color: rgba(116, 116, 116, 0.11) !important;
-	transition: 0.5s; 
+    background-color: lighten($primary, 10) !important;
+    transition: 0.5s; 
+    
     }
 }
 /*titulo principal*/
