@@ -163,10 +163,11 @@ body {
 /*Portafolio*/
 .article-layout-grid{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 0.5fr);
 	grid-template-rows: 1fr;
 	column-gap: 2rem;
-	grid-auto-flow: dense;
+    grid-auto-flow: dense;
+    grid-row-gap: 0px;
 	gap: 0.5rem;
 	margin-top: $margin * 3;
 	justify-content: center;
