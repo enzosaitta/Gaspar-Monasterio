@@ -199,18 +199,13 @@ body {
 	font-family: 'Karla', sans-serif;
 	font-size: 1.3rem;
     background-color: $primary; 
-    ul {
-        li{
-            a{
-                &:hover{
-                    color: $terciary;   
-                }
-            }
-        }
-    }
     .navbar-nav .nav-link {
         color: $secondary !important; 
-    }    
+    }  
+    .nav-link:hover{
+        color: $terciary !important;
+
+    }  
     .navbar-brand {
         font-size: $font-size * 2;
     }

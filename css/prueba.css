@@ -7320,10 +7320,10 @@ body {
   font-family: 'Karla', sans-serif;
   font-size: 1.3rem;
   background-color: #000000; }
-  .navbar-style ul li a:hover {
-    color: #FC47FC; }
   .navbar-style .navbar-nav .nav-link {
     color: #FFFFFF !important; }
+  .navbar-style .nav-link:hover {
+    color: #FC47FC !important; }
   .navbar-style .navbar-brand {
     font-size: 2rem; }
 
