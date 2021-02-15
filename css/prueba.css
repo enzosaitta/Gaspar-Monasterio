@@ -7168,9 +7168,6 @@ a.text-dark:hover, a.text-dark:focus {
 * {
   box-sizing: border-box; }
 
-/*:root	{
-	font-size: 14px;
-}*/
 body {
   background-color: #FFFFFF;
   padding-bottom: 42px;
@@ -7178,7 +7175,6 @@ body {
   position: relative;
   min-height: 100vh;
   /*footer*/
-  /*video*/
   /*Formulario Contacto*/ }
   body main section {
     max-width: 100px;
@@ -7222,9 +7218,6 @@ body {
     background-color: #000000; }
     body footer p {
       color: #FFFFFF; }
-  body video {
-    width: 100%;
-    height: 100%; }
   body form {
     display: block;
     font-family: 'Rubik', sans-serif;
@@ -7250,6 +7243,7 @@ body {
   color: #0a0a0a;
   padding-bottom: 5rem; }
 
+/*mis ilustraciones*/
 .box {
   background-color: #FFFFFF;
   color: #fff;
@@ -7258,6 +7252,7 @@ body {
   padding: 0.25rem;
   font-size: 150%; }
 
+/*imagen inicio*/
 .content-wrapper {
   display: grid;
   grid-template-columns: 50% 30% 30%;
@@ -7279,21 +7274,21 @@ body {
 
 /*Contenedor*/
 .container {
+  display: block;
   max-width: 1140px;
   margin: auto;
-  display: block;
   padding-left: 1rem;
   padding-right: 1rem; }
+
+.card-img {
+  max-width: 100%;
+  height: auto; }
 
 /*Portafolio*/
 .article-layout-grid {
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);
-  grid-template-rows: 1fr;
-  column-gap: 2rem;
-  grid-auto-flow: dense;
-  grid-row-gap: 0px;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-top: 3rem;
   justify-content: center;
   text-decoration: #000000;
@@ -7309,11 +7304,23 @@ body {
     transition: 1s; }
 
 /*imagenes sobre-mi/programas*/
-.content-programs {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  padding: 2rem; }
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0;
+  height: 50vh; }
+
+.box03 {
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  font-size: 3em;
+  align-items: center; }
 
 /*navegacion*/
 .navbar-style {
