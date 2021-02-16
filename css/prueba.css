@@ -7186,8 +7186,7 @@ body {
     margin-right: 1rem;
     margin-top: 1rem; }
   body aside p {
-    font-size: 1.5rem;
-    opacity: .8rem; }
+    font-size: 1.5rem; }
   body h1, body h2, body h3, body h4, body h6 {
     color: #000000;
     font-family: 'Karla', sans-serif;
@@ -7255,12 +7254,13 @@ body {
 /*imagen inicio*/
 .content-wrapper {
   display: grid;
-  grid-template-columns: 50% 30% 30%;
+  grid-template-columns: 50% 30% 20%;
   grid-template-rows: 1fr;
   column-gap: 2rem;
   grid-auto-flow: dense;
   gap: 0.5rem;
   margin-bottom: 5rem;
+  margin-top: 5rem;
   justify-content: center;
   align-items: center;
   /*Texto index*/ }
@@ -7349,10 +7349,10 @@ body {
   color: #FFFFFF !important;
   font-family: 'Karla', sans-serif;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 5rem; }
   .btn-secondary:hover {
-    background-color: #1a1a1a !important;
+    background-color: violet !important;
     transition: 0.5s; }
 
 /*titulo principal*/
