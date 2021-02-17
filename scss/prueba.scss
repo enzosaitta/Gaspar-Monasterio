@@ -271,7 +271,10 @@ h4.card-title {
     border-radius: .25rem;
     margin-bottom: $margin !important;
 }
-
+.card-group{
+    @media screen and (min-width: 740px){
+    width: 30.30303030303%;
+}
 h5.card-title{
     font-size: 2rem;
     text-align: center;
@@ -289,8 +292,4 @@ h6.card-subtitle{
 }
 p.card-text{
     font-size: 1rem;
-}
-.fas{
-    padding: 1rem;
-    
 }
