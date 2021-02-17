@@ -7244,12 +7244,14 @@ body {
 
 /*mis ilustraciones*/
 .box {
-  background-color: #FFFFFF;
-  color: #fff;
+  display: flex;
   border-radius: 0.25rem;
   border: 1px solid #dee2e6;
+  width: 300px;
+  height: auto;
+  box-shadow: 1px 1px 4px 2px gray;
   padding: 0.25rem;
-  font-size: 150%; }
+  justify-content: center; }
 
 /*imagen inicio*/
 .content-wrapper {
@@ -7352,11 +7354,12 @@ body {
   font-size: 1rem;
   margin-top: 5rem; }
   .btn-secondary:hover {
-    background-color: violet !important;
+    background-color: #1a1a1a !important;
     transition: 0.5s; }
 
 /*titulo principal*/
-.card-title {
+h4.card-title {
+  font-family: 'Karla', sans-serif;
   text-align: left;
   font-size: 3rem;
   margin-top: 5rem;
@@ -7380,3 +7383,23 @@ body {
   border: 1px solid #000000;
   border-radius: .25rem;
   margin-bottom: 1rem !important; }
+
+h5.card-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #000; }
+
+.card-body {
+  padding: 30px 10px 50px;
+  border: 1px solid #666;
+  position: relative;
+  margin-bottom: 80px; }
+
+h6.card-subtitle {
+  font-size: 1rem; }
+
+p.card-text {
+  font-size: 1rem; }
+
+.fas {
+  padding: 1rem; }
