@@ -7216,7 +7216,9 @@ body {
     right: 0;
     background-color: #000000; }
     body footer p {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      justify-content: center;
+      margin-bottom: 1rem; }
   body form {
     display: block;
     font-family: 'Rubik', sans-serif;
@@ -7229,29 +7231,6 @@ body {
     body form label {
       text-transform: uppercase;
       padding-right: 1rem; }
-
-/*Grilla Galeria*/
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 0.5fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 3px;
-  grid-row-gap: 3px;
-  grid-gap: 5px;
-  background-color: #FFFFFF;
-  color: #0a0a0a;
-  padding-bottom: 5rem; }
-
-/*mis ilustraciones*/
-.box {
-  display: flex;
-  border-radius: 0.25rem;
-  border: 1px solid #dee2e6;
-  width: 300px;
-  height: auto;
-  box-shadow: 1px 1px 4px 2px gray;
-  padding: 0.25rem;
-  justify-content: center; }
 
 /*imagen inicio*/
 .content-wrapper {
@@ -7277,10 +7256,10 @@ body {
 /*Contenedor*/
 .container {
   display: block;
-  max-width: 1140px;
+  max-width: 1200px;
   margin: auto;
-  padding-left: 1rem;
-  padding-right: 1rem; }
+  padding: 0 1rem;
+  width: 100%; }
 
 .card-img {
   max-width: 100%;
@@ -7365,13 +7344,6 @@ h4.card-title {
   margin-top: 5rem;
   color: #FFFFFF; }
 
-/*iconos redes sociales*/
-.fa-behance {
-  color: #FFFFFF; }
-
-.fa-instagram {
-  color: #FFFFFF; }
-
 /*formulario de contacto*/
 .form-control {
   display: block;
@@ -7401,5 +7373,9 @@ h6.card-subtitle {
 p.card-text {
   font-size: 1rem; }
 
-.fas {
-  padding: 1rem; }
+.card {
+  border: none; }
+
+.col {
+  border-radius: 1rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
