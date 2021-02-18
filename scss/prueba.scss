@@ -81,6 +81,8 @@ body {
         background-color: $primary;
         p{
             color: $secondary;
+            justify-content: center;
+            margin-bottom: 1rem;
         }
     }
     /*Formulario Contacto*/
@@ -98,31 +100,6 @@ body {
             padding-right: 1rem;
     }  
 }
-}
-/*Grilla Galeria*/
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 0.5fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 3px;
-    grid-row-gap: 3px;
-    grid-gap: 5px;
-    background-color: $secondary;
-    color:lighten($primary, 4);
-    padding-bottom: $padding * 5;
-
-}
-/*mis ilustraciones*/
-.box {
-    display: flex;
-    border-radius: 0.25rem;
-    border: 1px solid #dee2e6;
-    width: 300px;
-    height: auto;
-    box-shadow: 1px 1px 4px 2px gray;
-    padding: 0.25rem;
-    justify-content: center;
-
 }
 /*imagen inicio*/
 .content-wrapper{
@@ -152,10 +129,10 @@ body {
 /*Contenedor*/
 .container {
     display: block;
-	max-width: 1140px;
+	max-width: 1200px;
 	margin: auto;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding: 0 1rem;
+    width: 100%;
 	
 }
 .card-img{
@@ -251,14 +228,9 @@ h4.card-title {
 	margin-top: $margin * 5;
     color: $secondary;
     
+    
 }
-/*iconos redes sociales*/
-.fa-behance{
-	color: $secondary;
-}
-.fa-instagram{
-	color: $secondary;
-}
+
 /*formulario de contacto*/
 .form-control{
 	display: block;
@@ -271,17 +243,13 @@ h4.card-title {
     border-radius: .25rem;
     margin-bottom: $margin !important;
 }
-.card-group{
-    @media screen and (min-width: 740px){
-    width: 30.30303030303%;
-}
+
 h5.card-title{
     font-size: 2rem;
     text-align: center;
     color: #000;
 }
 .card-body{
-    
     padding: 30px 10px 50px;
     border: 1px solid #666;
     position: relative;
@@ -292,4 +260,11 @@ h6.card-subtitle{
 }
 p.card-text{
     font-size: 1rem;
+}
+.card{
+    border: none;
+}
+.col{
+    border-radius: 1rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
