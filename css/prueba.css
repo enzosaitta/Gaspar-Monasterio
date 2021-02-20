@@ -7428,6 +7428,29 @@ p.card-text {
   text-align: center;
   overflow: hidden; }
 
+#primerBoxCont {
+  justify-content: center;
+  height: 400px; }
+
+.fondoimgCont {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(../estilos/imgContacto.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.fondoimgCont h1 {
+  font-family: 'Karla', sans-serif;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  font-weight: 600;
+  margin-top: 6rem;
+  padding: 0; }
+
 .badge-primary {
   color: #fff;
   background-color: black; }
