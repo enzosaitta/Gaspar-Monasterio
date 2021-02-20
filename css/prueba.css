@@ -7297,8 +7297,7 @@ body {
   font-family: 'Karla', sans-serif;
   text-transform: uppercase; }
   .btn-primary:hover {
-    background-color: #FC47FC !important;
-    transition: 0.5s; }
+    background-color: #FC47FC !important; }
 
 .btn-secondary {
   background-color: #000000 !important;
