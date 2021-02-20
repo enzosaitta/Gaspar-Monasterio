@@ -251,7 +251,7 @@ p.card-text{
     padding: 0;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
     overflow: hidden;
-    background-image: url(../estilos/gifsobremi.gif);
+    background-image: url(https://media.giphy.com/media/2Q5CWYtcUMzh6TUz4M/giphy.gif);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -316,4 +316,15 @@ p.card-text{
     margin-top: 10rem;
     text-align: center;
     overflow: hidden;
+}
+.badge-primary {
+    color: #fff;
+    background-color: black;
+}
+
+.badge {
+    font-size: 60%;
+    &:hover{
+        background-color: $terciary !important;
+        }
 }
