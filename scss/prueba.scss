@@ -19,6 +19,8 @@ $margin: 1rem;
 
 *	{
 	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -28,6 +30,7 @@ body {
 	position: relative;
     min-height: 100vh;
     margin: 0;
+    
     main section {
         max-width: 100px;
         flex: 0 0 100px;
@@ -119,7 +122,7 @@ body {
 /*imagen inicio*/
 .content-wrapper{
 	display: grid;
-	grid-template-columns: 50% 30%; 
+	grid-template-columns: 45% 30%; 
 	grid-template-rows: 1fr;
 	column-gap: 2rem;
 	grid-auto-flow: dense;
@@ -204,9 +207,9 @@ body {
     position: relative;
     overflow: hidden;
     border: none;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
     .card-body{
-        padding: 30px 10px 50px;
+        padding: 15px 10px 10px;
         position: relative;
         margin-bottom: 10px;
     }
@@ -219,7 +222,8 @@ body {
         font-size: 1rem;
     }
     p.card-text{
-        font-size: 1rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
     }
 }
 /*Ilustraciones*/
