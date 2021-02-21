@@ -92,13 +92,34 @@ body {
         label {
             text-transform: uppercase;
             padding-right: 1rem;
+    } 
+}
+}
+/*Navegacion*/
+.navbar-style {
+	font-family: 'Karla', sans-serif;
+	font-size: 1.3rem;
+    background-color: $primary; 
+    .navbar-nav .nav-link {
+        font-size: 1.5rem;
+        color: $secondary !important; 
     }  
+    .nav-link{
+        display: block;
+    }
+    .nav-link:hover{
+        color: $terciary !important;
+
+    }  
+    .navbar-brand {
+        font-size: $font-size * 2;
+    }
 }
-}
+
 /*imagen inicio*/
 .content-wrapper{
 	display: grid;
-	grid-template-columns: 50% 30% 20%;
+	grid-template-columns: 50% 30%; 
 	grid-template-rows: 1fr;
 	column-gap: 2rem;
 	grid-auto-flow: dense;
@@ -130,11 +151,6 @@ body {
     
 	
 }
-.card-img{
-    max-width: 100%;
-    height: auto;
-}
-
 /*imagenes sobre-mi/programas*/
 .flex-container {
     display: flex;
@@ -144,30 +160,13 @@ body {
     padding: 1rem;
     margin: 0;
     height: 100%;
-
-}
-.box03{
-    line-height: 150px;
-    font-size: 3em;
-    align-items: center;
-}
-
-/*navegacion*/
-.navbar-style {
-	font-family: 'Karla', sans-serif;
-	font-size: 1.3rem;
-    background-color: $primary; 
-    .navbar-nav .nav-link {
-        color: $secondary !important; 
-    }  
-    .nav-link:hover{
-        color: $terciary !important;
-
-    }  
-    .navbar-brand {
-        font-size: $font-size * 2;
+    .box03{
+        line-height: 150px;
+        font-size: 3em;
+        align-items: center;
     }
 }
+
 /*botones*/
 .btn-primary{
     background-color: $primary !important;
@@ -190,16 +189,6 @@ body {
     transition: 0.5s; 
     }
 }
-/*titulo principal*/
-h4.card-title {
-    font-family: 'Karla', sans-serif ;
-	text-align: left;
-	font-size: $font-size * 3;
-	margin-top: $margin * 5;
-    color: $secondary;
-    
-    
-}
 
 /*formulario de contacto*/
 .form-control{
@@ -207,68 +196,43 @@ h4.card-title {
 	width: 50%;
     font-size: $font-size;
     color: #495057;
-    background-color:$secondary;
-    background-clip: padding-box;
     border: 1px solid $primary;
-    border-radius: .25rem;
     margin-bottom: $margin !important;
 }
-
-h5.card-title{
-    font-size: 2rem;
-    text-align: center;
-    color: #000;
-}
-.card-body{
-    padding: 30px 10px 50px;
-    position: relative;
-    margin-bottom: 10px;
-}
-h6.card-subtitle{
-    font-size: 1rem;
-}
-p.card-text{
-    font-size: 1rem;
-}
+/*Servicios*/
 .card{
     position: relative;
     overflow: hidden;
     border: none;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    .card-body{
+        padding: 30px 10px 50px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    h5.card-title{
+        font-size: 2rem;
+        text-align: center;
+        color: #000;
+    }
+    h6.card-subtitle{
+        font-size: 1rem;
+    }
+    p.card-text{
+        font-size: 1rem;
+    }
 }
+/*Ilustraciones*/
 .col{
     margin-bottom: 2rem;
     border-radius: 1rem;
+    img{
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
+        border-radius: 1rem;
+        border-style: double;
+    }
 }
-.col img{
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
-    border-radius: 1rem;
-    border-style: double;
-}
-.fondoimg{
-    width: 100%;
-    font-size: 1rem;
-    padding: 0;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
-    overflow: hidden;
-    background-image: url(https://media.giphy.com/media/2Q5CWYtcUMzh6TUz4M/giphy.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-.fondoimg h1{
-    font-family: 'Karla', sans-serif;
-    margin-top: 10rem;
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 0;
-    
-}
-#primerBox{
-    width: 100%;
-    height: 400px;
-}
-/*imagen index principal*/
+/*imagen y titulo index */
 #primerBox01{   
     justify-content: center;
     height: 400px;
@@ -283,18 +247,40 @@ p.card-text{
     background-image: url(../estilos/pruebahome.png);
     background-repeat: no-repeat;
     background-size: cover;
+    h1{
+        font-family: 'Karla', sans-serif;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        font-weight: 600;
+        margin-top: 6rem;
+        padding: 0;
+    }
 }
-.fondoimg01 h1{
-    font-family: 'Karla', sans-serif;
-    color: white;
-    text-align: center;
-    overflow: hidden;
-    font-weight: 600;
-    margin-top: 6rem;
+/*imagen y titulo sobre-mi*/
+#primerBox{
+    width: 100%;
+    height: 400px;
+}
+.fondoimg{
+    width: 100%;
+    font-size: 1rem;
     padding: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-image: url(https://media.giphy.com/media/2Q5CWYtcUMzh6TUz4M/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        font-family: 'Karla', sans-serif;
+        margin-top: 10rem;
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 0;
+        
+    }
 }
-
-
+/*imagen y titulo Portafolio*/
 #primerBox03{   
     width: 100%;
     height: 400px;
@@ -308,20 +294,20 @@ p.card-text{
     background-image: url(../estilos/sobremimg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    h1{
+        display: block;
+        font-family: 'Karla', sans-serif;
+        color: white;
+        margin-top: 10rem;
+        text-align: center;
+        overflow: hidden;
+    }
 }
-.fondoimg03 h1{
-    display: block;
-    font-family: 'Karla', sans-serif;
-    color: white;
-    margin-top: 10rem;
-    text-align: center;
-    overflow: hidden;
-}
+/*imagen y titulo Contacto*/
 #primerBoxCont{   
     justify-content: center;
     height: 400px;
 }
-
 .fondoimgCont{
     width: 100%;
     font-size: 1rem;
@@ -331,21 +317,20 @@ p.card-text{
     background-image: url(../estilos/imgContacto.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-.fondoimgCont h1{
-    font-family: 'Karla', sans-serif;
-    color: white;
-    text-align: center;
-    overflow: hidden;
-    font-weight: 600;
-    margin-top: 6rem;
-    padding: 0;
+    h1{
+        font-family: 'Karla', sans-serif;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        font-weight: 600;
+        margin-top: 10rem;
+        padding: 0;
+    }
 }
 .badge-primary {
     color: #fff;
     background-color: black;
 }
-
 .badge {
     font-size: 60%;
     &:hover{
